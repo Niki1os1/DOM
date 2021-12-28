@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  background-image: url(/image/krestNull.jpg);
+}
+
+.start-display {
+  min-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game-field {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.button {
+  width: 30%;
+  height: 5vw;
+}
+
+.button-6 {
+  width: 30%;
+  height: 5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+          box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+p {
+  width: 230px;
+}
+
+.button-6:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}

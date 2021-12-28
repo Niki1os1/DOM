@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="start-display" id="start-display">
+        <button class="button-6" onclick="showForm()">Играть</button>
+        <button class="button-6" onclick="showStatisticsDisplay()">Статистика</button>
+    </div>
+    <form id="form">
+        <div>
+            <label for="firstName">Введите никнейм</label>
+            <input type="text" id="firstName">
+        </div>
+        <div>
+            <label for="secondName">Введите никнейм</label>
+            <input type="text" id="secondName">
+        </div>
+        <p class="error" id="errorMessage"></p>
+        <input class="button-6" type="button" onclick="play()" value="Продолжить">
+        <button class="button-6" type="button" onclick="Start()">Отмена</button>
+    </form>
+    <div class="game-display" id="game-display">
+
+        <div class="game-field" id="game-field">
+            <button class="button-6" type="button" onclick="move(0,0, this)"></button>
+            <button class="button-6" type="button" onclick="move(0,1, this)"></button>
+            <button class="button-6" type="button" onclick="move(0,2, this)"></button>
+            <button class="button-6" type="button" onclick="move(1,0, this)"></button>
+            <button class="button-6" type="button" onclick="move(1,1, this)"></button>
+            <button class="button-6" type="button" onclick="move(1,2, this)"></button>
+            <button class="button-6" type="button" onclick="move(2,0, this)"></button>
+            <button class="button-6" type="button" onclick="move(2,1, this)"></button>
+            <button class="button-6" type="button" onclick="move(2,2, this)"></button>
+        </div>
+        <p class="info" id="game-log"></p>
+    </div>
+    <div class="statistics-display" id="statistics-display">
+        <p id="statistics-text"></p>
+        <button class="button" type="button" onclick="Start()">Отмена</button>
+    </div>
+    <script src="lab9.js"></script>
+</body>
+
+</html>
